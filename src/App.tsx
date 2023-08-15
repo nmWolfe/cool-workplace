@@ -22,9 +22,10 @@ function App() {
         <h1>Ticket Tracker</h1>
       </header>
       <section className="filter">
-        <label htmlFor="employee">Search by Employee</label>
+        <label htmlFor="message">Search by Employee</label>
         <br />
         <input
+          className="app__input"
           type="text"
           id="message"
           onChange={handleChange}
