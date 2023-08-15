@@ -8,7 +8,7 @@ type EmployeeCardProps = {
 
 const EmployeeCard = ({ employees }: EmployeeCardProps) => {
   return (
-    <div>
+    <>
       {employees.map((employee) => (
         <div key={employee.id} className="employee-card">
           <h3 className="employee-card__name">{employee.name}</h3>
@@ -16,8 +16,7 @@ const EmployeeCard = ({ employees }: EmployeeCardProps) => {
           <CounterCard />
         </div>
       ))}
-      ;
-    </div>
+    </>
   );
 };
 

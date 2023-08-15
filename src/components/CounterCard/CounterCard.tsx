@@ -22,7 +22,7 @@ const CounterCard = () => {
     <div className="counter-card">
       <h4 className="counter-card__header">Tickets Completed</h4>
       {counter}
-      <div className="counter-card__images">
+      <div className="counter-card__image-div">
         <img
           className="counter-card__image"
           src={minus}

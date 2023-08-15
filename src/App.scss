@@ -1,0 +1,36 @@
+@use "../src/assets/styles/variables" as *;
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .app__header {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .app__body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .app__body {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .app__body {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .app__body {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

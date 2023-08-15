@@ -5,8 +5,12 @@ import team from "./data/team";
 function App() {
   return (
     <div className="app">
-      <header>Ticket Tracker</header>
-      <EmployeeCard employees={team} />
+      <header className="app__header">
+        <h1>Ticket Tracker</h1>
+      </header>
+      <div className="app__body">
+        <EmployeeCard employees={team} />
+      </div>
     </div>
   );
 }
