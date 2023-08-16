@@ -9,17 +9,7 @@
     text-align: center;
   }
   .filter {
-    text-align: center;
-    padding: 10px;
-  }
-  &__input {
-    border-radius: 5px;
-    border: 1px solid #000;
-    padding: 1px;
-    font-family: $secondary-font;
-    &:focus {
-      outline-color: $primary-color;
-    }
+    display: flex;
   }
 }
 

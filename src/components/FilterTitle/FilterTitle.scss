@@ -1,0 +1,14 @@
+@use "../../assets/styles/variables" as *;
+.filter-title {
+  text-align: center;
+  padding: 10px;
+  &__select {
+    border-radius: 5px;
+    border: 1px solid #000;
+    padding: 1px;
+    font-family: $secondary-font;
+    &:focus {
+      outline-color: $primary-color;
+    }
+  }
+}
