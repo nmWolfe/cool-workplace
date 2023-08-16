@@ -20,6 +20,7 @@ const FilterTitle = ({ updateRole }: FilterTitleProps) => {
         <option value="junior">Junior Software Dev</option>
         <option value="software">Software Developer</option>
         <option value="senior">Senior Software Dev</option>
+        <option value="project">Project Manager</option>
         <option value="tester">Tester</option>
         <option value="hard">Hard Man</option>
       </select>
