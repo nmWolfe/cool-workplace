@@ -13,10 +13,11 @@ function App() {
 
   const handleFilters = (teamArr: Team[]) => {
     const filteredArr = teamArr.filter((employee) => {
+      // Return true if name match
       const nameFilter = employee.name
         .toLowerCase()
         .includes(filter.searchText.toLowerCase());
-
+      // Return true if role match
       const roleFilter = employee.role
         .toLowerCase()
         .includes(filter.roleSelect.toLowerCase());
@@ -28,6 +29,7 @@ function App() {
       } else if (filter.roleSelect) {
         return roleFilter;
       } else {
+        // Show all cards
         return true;
       }
     });
@@ -36,6 +38,7 @@ function App() {
 
   const handleInput = (event: FormEvent<HTMLInputElement>) => {
     const searchText = event.currentTarget.value;
+    // This is setting the object as a copy, then updating the key you want to update. My head hurt with this
     setFilter({ ...filter, searchText: searchText });
   };
 
