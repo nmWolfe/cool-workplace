@@ -14,6 +14,7 @@
     text-align: center;
     padding: 20px;
   }
+  &__link::before,
   &__link:active,
   &__link:visited {
     text-decoration: none;

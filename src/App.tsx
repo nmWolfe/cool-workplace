@@ -13,9 +13,9 @@ function App() {
       <div className="app">
         <Nav />
         <Routes>
-          <Route path="/" element={<Home employees={team} />} />
-          <Route path="/ticket-tracker" element={<Tickets />} />
-          <Route path="/profiles" element={<Profiles />} />
+          <Route path="/cool-workplace" element={<Home employees={team} />} />
+          <Route path="/cool-workplace/ticket-tracker" element={<Tickets />} />
+          <Route path="cool-workplace/profiles" element={<Profiles />} />
           <Route
             path="/profiles/:profileId"
             element={<ProfileInfo employees={team} />}
