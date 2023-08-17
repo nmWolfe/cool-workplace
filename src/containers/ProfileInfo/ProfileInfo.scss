@@ -1,0 +1,33 @@
+@use "../../assets/styles/variables" as *;
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  width: 360px;
+  border: 1px solid $primary-color;
+  border-radius: 10px;
+  box-shadow: $box-shadow;
+  &__name {
+    scale: 1.2;
+    text-decoration: underline;
+    text-decoration-color: $primary-color;
+    padding: 20px;
+  }
+  &__role {
+    padding: 10px;
+  }
+  &__profile {
+    list-style: none;
+    text-align: left;
+    padding: 10px;
+    &--li {
+      padding: 5px;
+    }
+  }
+  &__image {
+    border-radius: 20px;
+    padding: 5px;
+  }
+}

@@ -20,4 +20,13 @@
     font-weight: normal;
     font-family: $secondary-font;
   }
+  &__link:active,
+  &__link:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+  &__link:hover {
+    text-decoration: underline;
+    text-decoration-color: $primary-color;
+  }
 }

@@ -1,0 +1,25 @@
+@use "../../assets/styles/variables" as *;
+
+.nav {
+  width: 90%;
+  padding: 20px;
+  .nav-ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    &__link {
+      text-decoration: none;
+    }
+    &__link:active,
+    &__link:visited {
+      color: inherit;
+      text-decoration: none;
+    }
+    &__link:hover {
+      text-decoration: underline;
+      text-decoration-color: $primary-color;
+      cursor: pointer;
+      scale: 1.1;
+    }
+  }
+}

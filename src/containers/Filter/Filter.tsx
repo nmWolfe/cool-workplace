@@ -1,6 +1,6 @@
 import { FormEventHandler } from "react";
-import FilterName from "../components/FilterName/FilterName";
-import FilterTitle from "../components/FilterTitle/FilterTitle";
+import FilterName from "../../components/FilterName/FilterName";
+import FilterTitle from "../../components/FilterTitle/FilterTitle";
 
 type FilterProps = {
   updateMessage: FormEventHandler<HTMLInputElement>;

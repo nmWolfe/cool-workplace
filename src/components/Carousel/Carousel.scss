@@ -1,0 +1,46 @@
+@use "../../assets/styles/variables" as *;
+
+.carousel {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  &__arrow {
+    background: none;
+    border: none;
+    &--left {
+      width: $primary-width;
+    }
+
+    &--right {
+      width: $primary-width;
+    }
+    &:active {
+      scale: 0.9;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__name {
+    padding: 40px;
+    margin: 40px;
+    border: 2px solid $primary-color;
+    border-radius: 10px;
+    box-shadow: $box-shadow;
+    transition: scale 1s;
+    &:hover {
+      scale: 1.1;
+    }
+  }
+  &__link:active,
+  &__link:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+  &__link:hover {
+    text-decoration: underline;
+    text-decoration-color: $primary-color;
+  }
+}

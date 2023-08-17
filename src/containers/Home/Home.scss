@@ -1,0 +1,33 @@
+@use "../../assets/styles/variables" as *;
+
+.home {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  &__header {
+    text-align: center;
+  }
+  &__layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    text-align: center;
+    padding: 20px;
+  }
+  &__link:active,
+  &__link:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+  &__link:hover {
+    text-decoration: underline;
+    text-decoration-color: $primary-color;
+  }
+  &__employee {
+    padding: 20px;
+    transition: scale 1s;
+    &:hover {
+      scale: 1.1;
+    }
+  }
+}
