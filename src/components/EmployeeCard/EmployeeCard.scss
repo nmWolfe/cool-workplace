@@ -20,6 +20,10 @@
     font-weight: normal;
     font-family: $secondary-font;
   }
+  &__link {
+    text-decoration: none;
+    color: $secondary-color;
+  }
   &__link:active,
   &__link:visited {
     text-decoration: none;
