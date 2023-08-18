@@ -2,6 +2,8 @@
 
 Check out the [**Cool-Workplace**](https://nmwolfe.github.io/cool-workplace/#/) here.
 
+![ticket-tracker-1](https://github.com/nmWolfe/cool-workplace/assets/125403716/a4ccbf47-a0ce-4d58-bcb2-dbce3f463ac4)
+
 ## The brief
 
 Tasked with creating a ticket-tracking system for the workplace, where each employee (from a data file) should be able to increment/decrement their ticket count. Once this was completed, an extension of the task was to have additional search options, by employee name, or occupation. As a final extension, the task was to use React Routing to make a single page into three, having the option to _learn_ a bit more about each employee with a specific profile page using react Query Params.
