@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import "./App.scss";
 import Nav from "./components/Nav/Nav";
 import Tickets from "./containers/Tickets/Tickets";
@@ -9,7 +9,7 @@ import team from "./data/team";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="app">
         <Nav />
         <Routes>
@@ -22,7 +22,7 @@ function App() {
           />
         </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
